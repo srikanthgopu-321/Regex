@@ -24,5 +24,19 @@ else
 fi
 
 
+regex3="^[a-zA-Z0-9+_.-]+@[a-zA-Z.]+$"
+
+read -p "enter the valid gmail:" gmailid
+
+if [[ $gmailid =~ $regex3 ]]
+        then
+        echo "Valid"
+        else
+        echo "Invalid gmail"
+fi
+
+
+
+
 
 
