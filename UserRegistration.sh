@@ -36,7 +36,15 @@ if [[ $gmailid =~ $regex3 ]]
 fi
 
 
+read mobile
 
-
+echo "Enter your mobile number "
+regex4="[0-9]{2,5}[[:space:]][[:digit:]]{10}$"
+if [[ $mobile =~ $regex4 ]]
+then
+        echo "valid"
+else
+        echo "invalid Mobile Number"
+fi
 
 
