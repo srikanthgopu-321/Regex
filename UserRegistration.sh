@@ -89,4 +89,18 @@ else
 fi
 
 
+echo
+
+
+regex="^[a-zA-Z0-9+_.-]+@[a-zA-Z.]+$"
+
+read -p "enter the valid gmail:" gmailid
+
+if [[ $gmailid =~ $regex ]]
+        then
+        echo "true"
+        else
+        echo "false"
+fi
+
 
